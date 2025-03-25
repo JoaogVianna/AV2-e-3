@@ -1,0 +1,100 @@
+/* Estilos gerais do body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: rgb(250, 0, 0);
+    background: radial-gradient(circle, rgba(250, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Estilo para o título */
+h1 {
+    font-size: 3rem;
+    margin-top: 30px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Estilo para o conteúdo principal */
+.main-content {
+    padding: 50px 20px;
+}
+
+/* Estilo para as curiosidades */
+.curiosidades {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo para cada item de curiosidade */
+.curiosidade-item {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s ease-in-out;
+}
+
+/* Efeito de hover */
+.curiosidade-item:hover {
+    transform: scale(1.05);
+    background-color: rgba(189, 195, 199, 0.8);
+}
+
+/* Quando a curiosidade é clicada e expandida */
+.curiosidade-item.active {
+    background-color: rgba(189, 195, 199, 1);
+    transform: scale(1.1);
+}
+
+/* Estilo para o botão de navegação */
+.navegacao button {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito de hover no botão */
+.navegacao button:hover {
+    background-color: #3498db;
+}
+
+/* Estilo para a explicação da curiosidade */
+.curiosidade-item span {
+    font-size: 1rem;
+    margin-top: 10px;
+    display: block;
+    font-style: italic;
+    color: #ecf0f1;
+}
+
+
+body {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
